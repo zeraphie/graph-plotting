@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.country-filter-wrapper {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 6px;
+}
+
+.label-filter-wrapper {
+  display: flex;
+  gap: 6px;
+}
+
+.label-filter-wrapper label:after {
+  content: '\1F5F6';
+  margin-left: 8px;
+}
+
+.label-filter-wrapper input:checked + label:after {
+  content: '\1F5F8';
+}
+
+.input-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.input-wrapper label,
+input[type="button"] {
+  display: block;
+  position: relative;
+  background: #E16D1E;
+  padding: 6px 12px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: background 0.2s, opacity 0.2s;
+  font-size: 16px;
+}
+
+.input-wrapper input {
+  position: absolute;
+  right: 100%;
+}
+
+.input-wrapper label:hover,
+input[type="button"]:hover {
+  opacity: 0.7;
+}
+
+.input-wrapper input:checked + label {
+  background: #1E92E1;
+  color: #fff;
+}
