@@ -13,10 +13,12 @@ export type DataOptions = {
 export function transformCSVToPlotly({ data, options }: { data: Data, options: DataOptions}) {
     let filteredData = data;
 
+    // Filter by the range of countries first so sort is faster
     if(options.filterCountries){
         filteredData = filterByCountries(filteredData, options.filterCountries);
     }
 
+    // Alphabetically sort by countries for more readability
     let sortedData = alphabetSortOnKey(filteredData, options.xAxis);
 
     return {
@@ -24,6 +26,7 @@ export function transformCSVToPlotly({ data, options }: { data: Data, options: D
         mode: 'markers',
         x: sortedData.map(item => item[options.xAxis]),
         y: sortedData.map(item => item[options.yAxis]),
+        // Dynamically change the markers dependant on what should be shown in it
         text: sortedData.map(item => {
             let str = '';
 

@@ -7,9 +7,11 @@ import { Graph } from './main/graph/Graph'
 function App() {
     const { register, watch, setValue } = useForm();
 
-    const xAxis = 'country';
-    const yAxis = 'annual Salary';
-    const countryFilters = [
+    const xAxis:string = 'country';
+    const yAxis:string = 'annual Salary';
+
+    // Filter a country by a range between two letters inclusively
+    const countryFilters: Array<{ label: string, value: string }> = [
         {
             label: 'A to F', value: 'af'
         },
