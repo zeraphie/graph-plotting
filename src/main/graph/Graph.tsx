@@ -6,19 +6,17 @@ import { DataOptions, transformCSVToPlotly } from "../data/transformCSVToPlotly"
 export function Graph({ data, options }: { data: Data, options: DataOptions}){
     const graphRef = useRef<HTMLHeadingElement>(null);
 
-    const computedData = useMemo(() => transformCSVToPlotly({data, options}), [data, options]);
+    const computedData = useMemo(() => transformCSVToPlotly({ data, options }), [data, options]);
 
     useEffect(() => {
         Plotly.newPlot(graphRef.current, [computedData], {
-            width: 1000,
-            height: 500,
+            width: 1200,
+            height: 700,
             yaxis: { title: DataLabels[options.yAxis] }
         });
     }, [ computedData ]);
 
     return (
-        <div ref={graphRef}>
-
-        </div>
+        <div ref={graphRef} />
     );
 }
