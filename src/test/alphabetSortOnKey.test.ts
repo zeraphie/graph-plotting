@@ -2,16 +2,24 @@ import { alphabetSortOnKey } from "../main/data/alphabetSortOnKey";
 
 test('sort an array of objects on an object key alphabetically', () => {
     expect(alphabetSortOnKey([
-        { key: 'z' },
-        { key: 'a' },
-        { key: 'f' },
-        { key: 'ace' },
-        { key: 'a' }
-    ], 'key')).toStrictEqual([
-        { key: 'a' },
-        { key: 'a' },
-        { key: 'ace' },
-        { key: 'f' },
-        { key: 'z' }
+        { "country": 'Kenya', "age": "48.94126712", "annual Salary": "76870.00765", "car purchase amount": "49991.60697", "credit card debt": "5575.323416", "customer e-mail": "vitae.semper.egestas@montesnascetur.co.uk", "customer name": "Blaze", "gender": "0", "net worth": "266531.2969" },
+        { "country": 'Canada', "age": "46.47392714", "annual Salary": "55293.575", "car purchase amount": "32967.20191", "credit card debt": "8276.644566", "customer e-mail": "ut.pharetra@ametultricies.net", "customer name": "Tamekah", "gender": "1", "net worth": "169475.9968" },
+        { "country": 'Mexico', "age": "52.68904044", "annual Salary": "72226.5603", "car purchase amount": "60865.76396", "credit card debt": "5817.153854", "customer e-mail": "adipiscing.elit@Nunc.com", "customer name": "Malachi Henson", "gender": "1", "net worth": "623033.482" },
+        { "country": 'Angola', "age": "63.41453115", "annual Salary": "46549.16329", "car purchase amount": "55543.38497", "credit card debt": "640.045378", "customer e-mail": "dui@nondui.ca", "customer name": "Abigail X. Lindsey", "gender": "0", "net worth": "626163.832" },
+        { "country": 'Norway', "age": "45.27895873", "annual Salary": "66747.66857", "car purchase amount": "39904.81613", "credit card debt": "9691.23462", "customer e-mail": "tincidunt@porttitor.com", "customer name": "Derek X. Richards", "gender": "1", "net worth": "221290.9818" },
+        { "country": 'Estonia', "age": "52.51683609", "annual Salary": "54382.7481", "car purchase amount": "38172.83602", "credit card debt": "6940.056371", "customer e-mail": "ac@sedpedeCum.org", "customer name": "Kermit Fuentes", "gender": "0", "net worth": "191168.4476" },
+        { "country": 'Portugal', "age": "39.71130983", "annual Salary": "60380.22868", "car purchase amount": "39975.43302", "credit card debt": "2799.719601", "customer e-mail": "aliquet.diam.Sed@posuere.org", "customer name": "Harmon, David N.", "gender": "0", "net worth": "508962.4874" },
+        { "country": 'Haiti', "age": "50.19301623", "annual Salary": "51752.23445", "car purchase amount": "47434.98265", "credit card debt": "10985.69656", "customer e-mail": "nunc.est.mollis@Suspendissetristiqueneque.co.uk", "customer name": "Orli Casey", "gender": "1", "net worth": "629312.4041" },
+        { "country": 'Panama', "age": "48.07331843", "annual Salary": "50017.38154", "car purchase amount": "31083.70271", "credit card debt": "7514.393035", "customer e-mail": "ac.facilisis.facilisis@necmalesuada.com", "customer name": "Caldwell, Yolanda F.", "gender": "0", "net worth": "160487.0006" }
+    ], 'country')).toStrictEqual([
+        { "country": 'Angola', "age": "63.41453115", "annual Salary": "46549.16329", "car purchase amount": "55543.38497", "credit card debt": "640.045378", "customer e-mail": "dui@nondui.ca", "customer name": "Abigail X. Lindsey", "gender": "0", "net worth": "626163.832" },
+        { "country": 'Canada', "age": "46.47392714", "annual Salary": "55293.575", "car purchase amount": "32967.20191", "credit card debt": "8276.644566", "customer e-mail": "ut.pharetra@ametultricies.net", "customer name": "Tamekah", "gender": "1", "net worth": "169475.9968" },
+        { "country": 'Estonia', "age": "52.51683609", "annual Salary": "54382.7481", "car purchase amount": "38172.83602", "credit card debt": "6940.056371", "customer e-mail": "ac@sedpedeCum.org", "customer name": "Kermit Fuentes", "gender": "0", "net worth": "191168.4476" },
+        { "country": 'Haiti', "age": "50.19301623", "annual Salary": "51752.23445", "car purchase amount": "47434.98265", "credit card debt": "10985.69656", "customer e-mail": "nunc.est.mollis@Suspendissetristiqueneque.co.uk", "customer name": "Orli Casey", "gender": "1", "net worth": "629312.4041" },
+        { "country": 'Kenya', "age": "48.94126712", "annual Salary": "76870.00765", "car purchase amount": "49991.60697", "credit card debt": "5575.323416", "customer e-mail": "vitae.semper.egestas@montesnascetur.co.uk", "customer name": "Blaze", "gender": "0", "net worth": "266531.2969" },
+        { "country": 'Mexico', "age": "52.68904044", "annual Salary": "72226.5603", "car purchase amount": "60865.76396", "credit card debt": "5817.153854", "customer e-mail": "adipiscing.elit@Nunc.com", "customer name": "Malachi Henson", "gender": "1", "net worth": "623033.482" },
+        { "country": 'Norway', "age": "45.27895873", "annual Salary": "66747.66857", "car purchase amount": "39904.81613", "credit card debt": "9691.23462", "customer e-mail": "tincidunt@porttitor.com", "customer name": "Derek X. Richards", "gender": "1", "net worth": "221290.9818" },
+        { "country": 'Panama', "age": "48.07331843", "annual Salary": "50017.38154", "car purchase amount": "31083.70271", "credit card debt": "7514.393035", "customer e-mail": "ac.facilisis.facilisis@necmalesuada.com", "customer name": "Caldwell, Yolanda F.", "gender": "0", "net worth": "160487.0006" },
+        { "country": 'Portugal', "age": "39.71130983", "annual Salary": "60380.22868", "car purchase amount": "39975.43302", "credit card debt": "2799.719601", "customer e-mail": "aliquet.diam.Sed@posuere.org", "customer name": "Harmon, David N.", "gender": "0", "net worth": "508962.4874" }
     ])
 });
