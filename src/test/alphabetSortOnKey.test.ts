@@ -1,7 +1,7 @@
-import { alphabetSortOnKey } from "../main/data/alphabetSortOnKey";
+import { dataSortOnKey } from "../main/data/dataSortOnKey";
 
 test('sort an array of objects on an object key alphabetically', () => {
-    expect(alphabetSortOnKey([
+    expect(dataSortOnKey([
         { "country": 'Kenya', "age": "48.94126712", "annual Salary": "76870.00765", "car purchase amount": "49991.60697", "credit card debt": "5575.323416", "customer e-mail": "vitae.semper.egestas@montesnascetur.co.uk", "customer name": "Blaze", "gender": "0", "net worth": "266531.2969" },
         { "country": 'Canada', "age": "46.47392714", "annual Salary": "55293.575", "car purchase amount": "32967.20191", "credit card debt": "8276.644566", "customer e-mail": "ut.pharetra@ametultricies.net", "customer name": "Tamekah", "gender": "1", "net worth": "169475.9968" },
         { "country": 'Mexico', "age": "52.68904044", "annual Salary": "72226.5603", "car purchase amount": "60865.76396", "credit card debt": "5817.153854", "customer e-mail": "adipiscing.elit@Nunc.com", "customer name": "Malachi Henson", "gender": "1", "net worth": "623033.482" },

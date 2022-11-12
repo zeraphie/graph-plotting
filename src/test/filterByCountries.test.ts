@@ -2,7 +2,7 @@ import { filterByCountries } from "../main/data/filterByCountries";
 
 test('Filter countries by a range of letters', () => {
     expect(filterByCountries([
-        { "country": 'Kenya', "age": "48.94126712", "annual Salary": "76870.00765", "car purchase amount": "49991.60697", "credit card debt": "5575.323416", "customer e-mail": "vitae.semper.egestas@montesnascetur.co.uk", "customer name": "Blaze", "gender": "0", "net worth": "266531.2969" },
+        { "country": 'Sweden', "age": "48.94126712", "annual Salary": "76870.00765", "car purchase amount": "49991.60697", "credit card debt": "5575.323416", "customer e-mail": "vitae.semper.egestas@montesnascetur.co.uk", "customer name": "Blaze", "gender": "0", "net worth": "266531.2969" },
         { "country": 'Canada', "age": "46.47392714", "annual Salary": "55293.575", "car purchase amount": "32967.20191", "credit card debt": "8276.644566", "customer e-mail": "ut.pharetra@ametultricies.net", "customer name": "Tamekah", "gender": "1", "net worth": "169475.9968" },
         { "country": 'Mexico', "age": "52.68904044", "annual Salary": "72226.5603", "car purchase amount": "60865.76396", "credit card debt": "5817.153854", "customer e-mail": "adipiscing.elit@Nunc.com", "customer name": "Malachi Henson", "gender": "1", "net worth": "623033.482" },
         { "country": 'Angola', "age": "63.41453115", "annual Salary": "46549.16329", "car purchase amount": "55543.38497", "credit card debt": "640.045378", "customer e-mail": "dui@nondui.ca", "customer name": "Abigail X. Lindsey", "gender": "0", "net worth": "626163.832" },

@@ -10,13 +10,15 @@
     "test": "vitest"
   },
   "dependencies": {
-    "plotly.js-dist": "^2.16.1",
+    "plotly.js-basic-dist-min": "^2.16.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.39.2"
   },
   "devDependencies": {
     "@rollup/plugin-dsv": "^3.0.1",
+    "@types/node": "^18.11.9",
+    "@types/plotly.js-basic-dist-min": "^2.12.1",
     "@types/react": "^18.0.24",
     "@types/react-dom": "^18.0.8",
     "@types/react-test-renderer": "^18.0.0",

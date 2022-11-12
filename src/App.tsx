@@ -1,14 +1,14 @@
 import { useForm } from 'react-hook-form'
 import './App.css'
 import data from './assets/data.csv'
-import { DataLabels } from './main/data/types'
+import { DataColumns, DataLabels } from './main/data/types'
 import { Graph } from './main/graph/Graph'
 
 function App() {
     const { register, watch, setValue } = useForm();
 
-    const xAxis:string = 'country';
-    const yAxis:string = 'annual Salary';
+    const xAxis:DataColumns = 'country';
+    const yAxis:DataColumns = 'annual Salary';
 
     // Filter a country by a range between two letters inclusively
     const countryFilters: Array<{ label: string, value: string }> = [

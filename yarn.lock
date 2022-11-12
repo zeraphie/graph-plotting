@@ -355,7 +355,7 @@
   dependencies:
     "@types/node" "*"
 
-"@types/node@*":
+"@types/node@*", "@types/node@^18.11.9":
   version "18.11.9"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-18.11.9.tgz#02d013de7058cea16d36168ef2fc653464cfbad4"
   integrity sha512-CRpX21/kGdzjOpFsZSkcrXMGIBWMGNIHXXBVFSH+ggkftxg+XYP20TESbh+zFvFj3EQOl5byk0HTRn1IL6hbqg==
@@ -369,6 +369,18 @@
   version "8.10.66"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-8.10.66.tgz#dd035d409df322acc83dff62a602f12a5783bbb3"
   integrity sha512-tktOkFUA4kXx2hhhrB8bIFb5TbwzS4uOhKEmwiD+NoiL0qtP2OQ9mFldbgD4dV1djrlBYP6eBuQZiWjuHUpqFw==
+
+"@types/plotly.js-basic-dist-min@^2.12.1":
+  version "2.12.1"
+  resolved "https://registry.yarnpkg.com/@types/plotly.js-basic-dist-min/-/plotly.js-basic-dist-min-2.12.1.tgz#257c0b04c42de737f5732b89bbe2baac4db607be"
+  integrity sha512-8jm/2TNlqbkBtym2fTS+vuBM2hkxYB8XRisUpsIRna4nIdVeJ7SFjNAof9r7USMWbp3ySC4Ij9HXsvB5f53+Ag==
+  dependencies:
+    "@types/plotly.js" "*"
+
+"@types/plotly.js@*":
+  version "2.12.8"
+  resolved "https://registry.yarnpkg.com/@types/plotly.js/-/plotly.js-2.12.8.tgz#0047cc07eb083eac9c8845288799042452bae9b2"
+  integrity sha512-h7gkIDxjC7ZgAZTActvrMJNDFsEPIAOr6kvMIhTOgxOrXTnXH3ywnmjtfoUViuKFNhos3zhhTtcT5QQT/bH/2w==
 
 "@types/prop-types@*":
   version "15.7.5"
@@ -1198,10 +1210,10 @@ picomatch@^2.3.1:
   resolved "https://registry.yarnpkg.com/picomatch/-/picomatch-2.3.1.tgz#3ba3833733646d9d3e4995946c1365a67fb07a42"
   integrity sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==
 
-plotly.js-dist@^2.16.1:
+plotly.js-basic-dist-min@^2.16.1:
   version "2.16.1"
-  resolved "https://registry.yarnpkg.com/plotly.js-dist/-/plotly.js-dist-2.16.1.tgz#e2ce478f2d4db93933b6d3b434c4c73422119eb7"
-  integrity sha512-xyZo/P1fkkt3TcQedUVeBn76Mh9A/jBDdc1gzky0F4VCxNyO6eIJcL+PGFn0OCcQo+9ZcrYhLLnF6QTssu7Bmg==
+  resolved "https://registry.yarnpkg.com/plotly.js-basic-dist-min/-/plotly.js-basic-dist-min-2.16.1.tgz#d8859a42ae487e18e379a76343072d2268504e46"
+  integrity sha512-+T2FPbw7rK+mC6/JGyUBj+rnDyJpmbgBQgA65SdYOkQBGz1i1K6yV1M4cwfg/3viXgwehQ9agtVBzD8+2CnWqw==
 
 postcss@^8.4.18:
   version "8.4.18"

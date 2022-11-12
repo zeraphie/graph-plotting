@@ -1,4 +1,4 @@
-import { alphabetSortOnKey } from "./alphabetSortOnKey";
+import { dataSortOnKey } from "./dataSortOnKey";
 import { filterByCountries } from "./filterByCountries";
 import { Data, DataColumns, DataLabels } from "./types";
 
@@ -19,12 +19,11 @@ export function transformCSVToPlotly({ data, options }: { data: Data, options: D
     }
 
     // Alphabetically sort by countries for more readability
-    let sortedData = alphabetSortOnKey(filteredData, options.xAxis);
-    console.log(sortedData);
+    let sortedData = dataSortOnKey(filteredData, options.xAxis);
 
     return {
-        type: 'scatter',
-        mode: 'markers',
+        type: 'scatter' as const,
+        mode: 'markers' as const,
         x: sortedData.map(item => item[options.xAxis]),
         y: sortedData.map(item => item[options.yAxis]),
         // Dynamically change the markers dependant on what should be shown in it
